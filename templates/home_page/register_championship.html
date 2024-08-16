@@ -1,0 +1,33 @@
+{% extends 'home_page/base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <div class="container-fluid">
+
+        <div class="row my-5">
+            <form class="col-6 mx-auto">
+                <legend>Cadastrar novo campeonato</legend>
+                <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Escolha o ano do campeonato:</label>
+                    <select id="disabledSelect" class="form-select">
+                        <option></option>
+                        <option>2024</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Escolha o campeonato:</label>
+                    <select id="disabledSelect" class="form-select">
+                        <option></option>
+                        <option>Brasileirão</option>
+                        <option>Libertadores</option>
+                        <option>Campeonato Carioca</option>
+                        <option>Campeonato Capixaba</option>
+                        <option>Copa Espírito Santo</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
